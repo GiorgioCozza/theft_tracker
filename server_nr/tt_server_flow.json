@@ -1,0 +1,182 @@
+[
+    {
+        "id": "ccaa5f0b.ca4c38",
+        "type": "tab",
+        "label": "theft_tracker_server",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cd3e8d40.f16068",
+        "type": "tcp in",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "gateway_1_TCP",
+        "server": "client",
+        "host": "localhost",
+        "port": "60005",
+        "datamode": "stream",
+        "datatype": "utf8",
+        "newline": "\\n",
+        "topic": "",
+        "base64": false,
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "b093a7dc.85bee8"
+            ]
+        ]
+    },
+    {
+        "id": "b093a7dc.85bee8",
+        "type": "function",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "message_processing",
+        "func": "function split_key_val(istr){\n    \n    let tmp_ar = istr.split(\":\");\n    tmp_ar[1] = tmp_ar[1].trim();\n\n    return tmp_ar;\n}\n\nvar motes_wake_dt = new Date('2 Mar 2021 13:30:00 GMT');\n\nif(msg.payload == \"TT_ALERT\"){\n    \n    if (flow.get(\"cur_alert\")=={}){ fst_msg = true; }\n    \n    var alert_session = {gateway_id:0,\n                         send_time:0,\n                         VIN:\"\",\n                         origin_mote_id:0,\n                         event_clock_time:0,\n                         origin_clock_time:0,\n                         hops:0,\n                         gateway_LAT:0.0,\n                         gateway_LONG:0.0,\n                         distance:0,\n                        };\n    flow.set(\"cur_alert\", alert_session);\n\n\n\n} else if(msg.payload == \"END\"){\n    \n    let as = flow.get(\"cur_alert\");\n    return { payload:{\n                gateway_id:as.gateway_id,\n                send_time:as.send_time,\n                VIN:as.VIN,\n                origin_mote_id:as.origin_mote_id,\n                event_clock_time:as.event_clock_time,\n                origin_clock_time:as.origin_clock_time,\n                hops:as.hops,\n                gateway_LAT:as.gateway_LAT,\n                gateway_LONG:as.gateway_LONG,\n                distance:as.distance\n                }\n            };\n    \n} else {\n    \n    let inp = split_key_val(msg.payload);\n    \n    if (inp[0] == \"gateway_id\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.gateway_id = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n        \n    }else if (inp[0] == \"send_time\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.send_time = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"VIN\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.VIN = inp[1];\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"origin_mote_id\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.origin_mote_id = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"origin_clock_time\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.origin_clock_time = parseInt(inp[1]);\n        \n        motes_wake_dt.setSeconds(motes_wake_dt.getSeconds() + parseInt(inp[1]))\n        \n        let sodate = motes_wake_dt.getFullYear()+\"-\"+\n                     (motes_wake_dt.getMonth()+1)+\"-\"+\n                     motes_wake_dt.getDate()+ \"_\" + \n                     motes_wake_dt.getHours() + \":\" + \n                     motes_wake_dt.getMinutes() + \":\" +\n                     motes_wake_dt.getSeconds();\n//            sodate = sodate.replace(/ /g, \"_\"); \n//           sodate = sodate.replace(/\\(.*\\)/g, \"\"); \n        flow.set(\"cur_alert\", as);\n\n        //return [{filename:as.file_name, payload:csv_header}, \n          //          null];\n        \n    \n    }else if (inp[0] == \"event_clock_time\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.hops = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    } else if (inp[0] == \"hops\"){\n    \n        let as = flow.get(\"cur_alert\");\n        as.hops = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"gateway_LAT\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.gateway_LAT = parseFloat(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"gateway_LONG\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.gateway_LONG = parseFloat(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"distance\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.distance = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    } else {\n        node.error(\"[ERROR] Unexpected message key \" + inp[0]);\n    }\n    \n}\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 360,
+        "wires": [
+            [
+                "70e8db9.9ba6924"
+            ]
+        ]
+    },
+    {
+        "id": "c54efdae.566cf8",
+        "type": "worldmap",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "x": 1100,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "848ba5d5.61b0c",
+        "type": "tcp in",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "gateway_2_TCP",
+        "server": "client",
+        "host": "localhost",
+        "port": "60006",
+        "datamode": "stream",
+        "datatype": "utf8",
+        "newline": "\\n",
+        "topic": "",
+        "base64": false,
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "4ffb8d6c.cf5fa4"
+            ]
+        ]
+    },
+    {
+        "id": "70e8db9.9ba6924",
+        "type": "function",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "alert_scheduler",
+        "func": "\nvar prev_orig_clock_time = flow.get(\"prev_orig_clock_time\");\nvar cur_orig_clock_time = msg.payload.origin_clock_time;\n\nif (prev_orig_clock_time == null){\n    \n    node.error(\"ERROR: No prev_orig_clock_time, set new value!\");\n    prev_orig_clock_time = cur_orig_clock_time;\n    flow.set(\"prev_orig_clock_time\", prev_orig_clock_time);    \n}\n\nif (prev_orig_clock_time <= cur_orig_clock_time){\n    \n    flow.set(\"prev_orig_clock_time\", cur_orig_clock_time);\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "ff126424.140938"
+            ]
+        ]
+    },
+    {
+        "id": "ff126424.140938",
+        "type": "function",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "wolrdmap_msg_format",
+        "func": "var as = msg.payload;\n\nreturn { payload:{\n                \"name\":as.VIN,\n                \"lat\":as.gateway_LAT,\n                \"lon\":as.gateway_LONG,\n                \"radius\":as.distance,\n                \"clickable\":true,\n                \"layer\": \"drawing\",\n                \"iconColor\": '#ca0000',\n                \"stroke\": false,\n                \"label\":as.VIN,\n                \"icon\":\"car\",\n                \"command\": {\"lat\":as.gateway_LAT,\n                            \"lon\":as.gateway_LONG,\n                            \"zoom\":18}}\n        };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "c54efdae.566cf8"
+            ]
+        ]
+    },
+    {
+        "id": "4ffb8d6c.cf5fa4",
+        "type": "function",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "message_processing",
+        "func": "function split_key_val(istr){\n    \n    let tmp_ar = istr.split(\":\");\n    tmp_ar[1] = tmp_ar[1].trim();\n\n    return tmp_ar;\n}\n\nvar motes_wake_dt = new Date('2 Mar 2021 13:30:00 GMT');\n\nif(msg.payload == \"TT_ALERT\"){\n    \n    if (flow.get(\"cur_alert\")=={}){ fst_msg = true; }\n    \n    var alert_session = {gateway_id:0,\n                         send_time:0,\n                         VIN:\"\",\n                         origin_mote_id:0,\n                         event_clock_time:0,\n                         origin_clock_time:0,\n                         hops:0,\n                         gateway_LAT:0.0,\n                         gateway_LONG:0.0,\n                         distance:0,\n                        };\n    flow.set(\"cur_alert\", alert_session);\n\n\n\n} else if(msg.payload == \"END\"){\n    \n    let as = flow.get(\"cur_alert\");\n    return { payload:{\n                gateway_id:as.gateway_id,\n                send_time:as.send_time,\n                VIN:as.VIN,\n                origin_mote_id:as.origin_mote_id,\n                event_clock_time:as.event_clock_time,\n                origin_clock_time:as.origin_clock_time,\n                hops:as.hops,\n                gateway_LAT:as.gateway_LAT,\n                gateway_LONG:as.gateway_LONG,\n                distance:as.distance\n                }\n            };\n    \n} else {\n    \n    let inp = split_key_val(msg.payload);\n    \n    if (inp[0] == \"gateway_id\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.gateway_id = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n        \n    }else if (inp[0] == \"send_time\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.send_time = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"VIN\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.VIN = inp[1];\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"origin_mote_id\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.origin_mote_id = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"origin_clock_time\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.origin_clock_time = parseInt(inp[1]);\n        \n        motes_wake_dt.setSeconds(motes_wake_dt.getSeconds() + parseInt(inp[1]))\n        \n        let sodate = motes_wake_dt.getFullYear()+\"-\"+\n                     (motes_wake_dt.getMonth()+1)+\"-\"+\n                     motes_wake_dt.getDate()+ \"_\" + \n                     motes_wake_dt.getHours() + \":\" + \n                     motes_wake_dt.getMinutes() + \":\" +\n                     motes_wake_dt.getSeconds();\n//            sodate = sodate.replace(/ /g, \"_\"); \n//           sodate = sodate.replace(/\\(.*\\)/g, \"\"); \n        flow.set(\"cur_alert\", as);\n\n        //return [{filename:as.file_name, payload:csv_header}, \n          //          null];\n        \n    \n    }else if (inp[0] == \"event_clock_time\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.hops = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    } else if (inp[0] == \"hops\"){\n    \n        let as = flow.get(\"cur_alert\");\n        as.hops = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"gateway_LAT\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.gateway_LAT = parseFloat(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"gateway_LONG\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.gateway_LONG = parseFloat(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    }else if (inp[0] == \"distance\"){\n        \n        let as = flow.get(\"cur_alert\");\n        as.distance = parseInt(inp[1]);\n        flow.set(\"cur_alert\", as);\n\n    } else {\n        node.error(\"[ERROR] Unexpected message key \" + inp[0]);\n    }\n    \n}\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 580,
+        "wires": [
+            [
+                "70e8db9.9ba6924"
+            ]
+        ]
+    },
+    {
+        "id": "d9982f52.210f1",
+        "type": "comment",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "corresponds to node 6 in cooja 'tt_simulation'",
+        "info": "",
+        "x": 190,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "53c4f4b7.f6af24",
+        "type": "comment",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "corresponds to node 7 in cooja 'tt_simulation'",
+        "info": "",
+        "x": 190,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "dcb6a9a1.ea1398",
+        "type": "comment",
+        "z": "ccaa5f0b.ca4c38",
+        "name": "accept only most recent alert from origin vehicle",
+        "info": "",
+        "x": 720,
+        "y": 420,
+        "wires": []
+    }
+]
