@@ -1,5 +1,5 @@
 # theft_tracker
-A localization algorithm for vehicle anti-theft systems based on WSN.
+A localization algorithm for a vehicle anti-theft system based on WSN.
 
 ## Prerequisites
 
