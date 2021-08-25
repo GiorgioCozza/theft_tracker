@@ -14,7 +14,7 @@ TYPE=mote
 endif
 
 ifndef DEBUG
-DEBUG=y
+DEBUG=n
 endif
 
 TARGET_LIBFILES+=-L $(PROJ_LIB_DIR) -ltheft_tracker_utils
@@ -58,7 +58,7 @@ $(PROJ_LIB_DIR)/libtheft_tracker_utils.a : $(PROJ_LIB_DIR)/theft_tracker_utils.o
 libs: $(PROJ_LIB_DIR)/libtheft_tracker_utils.a
 
 clean_libs: 
-	rm ${addprefix $(PROJ_LIB_DIR)/,*.o *.a }
+	rm -f ${addprefix $(PROJ_LIB_DIR)/,*.o *.a }
 
 CONTIKI_WITH_RIME=1
 

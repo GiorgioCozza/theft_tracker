@@ -28,8 +28,6 @@
 #ifndef THEFT_TRACKER_MOTE_H
 #define THEFT_TRACKER_MOTE_H
 
-//#define DEBUG
-
 #define MAX_UINT32_T			4294967295
 
 #define HEADER 					"TT_MSG"
