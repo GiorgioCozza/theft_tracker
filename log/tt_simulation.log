@@ -1,0 +1,1274 @@
+Rime started with address 2.0
+MAC 02:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 2.
+Rime started with address 6.0
+nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+Starting 'guard' 'shouter'
+
+Theft Tracker System activated
+MAC 06:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 6.
+ Monitoring the status of the vehicle...
+nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+Starting 'guard' 'shouter'
+Rime started with address 4.0
+MAC 04:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 4.
+nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+Starting 'guard' 'shouter'
+
+Theft Tracker System activated
+ Monitoring the status of the vehicle...
+Rime started with address 1.0
+MAC 01:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 1.
+nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+Starting 'guard' 'shouter'
+
+Theft Tracker System activated
+ Monitoring the status of the vehicle...
+Rime started with address 5.0
+MAC 05:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 5.
+nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+Starting 'guard' 'shouter'
+Rime started with address 3.0
+MAC 03:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 3.
+nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+Starting 'guard' 'shouter'
+
+Theft Tracker System activated
+ Monitoring the status of the vehicle...
+Theft Tracker Shouter activated
+ ALERT: Vehicle movement detected at time: 0
+ Monitoring the status of the vehicle...
+New alert message sent from 1, number of alert sent: 1.
+New alert message sent from 1, number of alert sent: 2.
+New alert message sent from 1, number of alert sent: 3.
+New alert message sent from 1, number of alert sent: 4.
+New alert message sent from 1, number of alert sent: 5.
+New alert message sent from 1, number of alert sent: 6.
+New alert message sent from 1, number of alert sent: 7.
+New alert message sent from 1, number of alert sent: 8.
+New alert message sent from 1, number of alert sent: 9.
+New alert message sent from 1, number of alert sent: 10.
+New alert message sent from 1, number of alert sent: 11.
+New alert message sent from 1, number of alert sent: 12.
+New alert message sent from 1, number of alert sent: 13.
+New alert message sent from 1, number of alert sent: 14.
+New alert message sent from 1, number of alert sent: 15.
+Theft Tracker Shouter activated
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+Theft Tracker Shouter activated
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+New alert session created, session timer set.
+TT_ALERT
+gateway_id: 5
+send_time: 18
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 18
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 16.
+Shouting event posted
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+Shouting event posted
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 19
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 19
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 17.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 20
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 20
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 18.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 21
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 21
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 19.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 22
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 22
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 20.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 23
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 23
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 21.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 24
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 24
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 22.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 25
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 25
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 23.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 26
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 26
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 24.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 27
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 27
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 25.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 28
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 28
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 26.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 2 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+TT_ALERT
+gateway_id: 5
+send_time: 29
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 29
+hops: 3
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 146
+END
+New alert message sent from 1, number of alert sent: 27.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 30
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 30
+hops: 2
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 96
+END
+New alert message sent from 1, number of alert sent: 28.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 31
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 31
+hops: 2
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 96
+END
+New alert message sent from 1, number of alert sent: 29.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 32
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 32
+hops: 2
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 96
+END
+New alert message sent from 1, number of alert sent: 30.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 33
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 33
+hops: 2
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 96
+END
+New alert message sent from 1, number of alert sent: 31.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 34
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 34
+hops: 2
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 96
+END
+New alert message sent from 1, number of alert sent: 32.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 35
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 35
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 33.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 36
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 36
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 34.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 42 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 37
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 35.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 38
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 36.
+TT_ALERT
+gateway_id: 5
+send_time: 39
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 37.
+Theft Tracker Shouter activated
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+New alert session created, session timer set.
+TT_ALERT
+gateway_id: 5
+send_time: 40
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 38.
+Shouting event posted
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 34 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 41
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 39.
+New alert session created, session timer set.
+ Stolen vehicle detected: 
+	- sender_id: 1 
+	- distance (approx): 50 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 0
+TT_ALERT
+gateway_id: 5
+send_time: 42
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 40.
+TT_ALERT
+gateway_id: 5
+send_time: 43
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 41.
+TT_ALERT
+gateway_id: 5
+send_time: 44
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 42.
+TT_ALERT
+gateway_id: 6
+send_time: 46
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 100
+END
+TT_ALERT
+gateway_id: 5
+send_time: 45
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 43.
+TT_ALERT
+gateway_id: 6
+send_time: 47
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 100
+END
+TT_ALERT
+gateway_id: 5
+send_time: 46
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 44.
+TT_ALERT
+gateway_id: 6
+send_time: 48
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 100
+END
+TT_ALERT
+gateway_id: 5
+send_time: 47
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 45.
+TT_ALERT
+gateway_id: 6
+send_time: 49
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 100
+END
+TT_ALERT
+gateway_id: 5
+send_time: 48
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 46.
+TT_ALERT
+gateway_id: 6
+send_time: 50
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 100
+END
+TT_ALERT
+gateway_id: 5
+send_time: 49
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 47.
+TT_ALERT
+gateway_id: 6
+send_time: 51
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 100
+END
+TT_ALERT
+gateway_id: 5
+send_time: 50
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 48.
+TT_ALERT
+gateway_id: 6
+send_time: 52
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 100
+END
+TT_ALERT
+gateway_id: 5
+send_time: 51
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 49.
+TT_ALERT
+gateway_id: 6
+send_time: 53
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 96
+END
+TT_ALERT
+gateway_id: 5
+send_time: 52
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 50.
+TT_ALERT
+gateway_id: 6
+send_time: 54
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 88
+END
+TT_ALERT
+gateway_id: 5
+send_time: 53
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 51.
+TT_ALERT
+gateway_id: 6
+send_time: 55
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 88
+END
+TT_ALERT
+gateway_id: 5
+send_time: 54
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 52.
+TT_ALERT
+gateway_id: 6
+send_time: 56
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 88
+END
+TT_ALERT
+gateway_id: 5
+send_time: 55
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 53.
+TT_ALERT
+gateway_id: 6
+send_time: 57
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 88
+END
+TT_ALERT
+gateway_id: 5
+send_time: 56
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 37
+hops: 1
+gateway_LAT: 40.352390
+gateway_LONG: 18.165014
+distance: 50
+END
+New alert message sent from 1, number of alert sent: 54.
+New alert session created, session timer set.
+TT_ALERT
+gateway_id: 6
+send_time: 58
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+Alert session expired: 0 messages sent, -1 [m] (last distance), -1 [hops]
+ Stolen vehicle detected: 
+	- sender_id: 3 
+	- distance (approx): 100 [m] 
+	- first send time: 3 [sec] 
+	- system time: 0 [sec]
+ Node added to the route list at position 1
+New alert session created, session timer set.
+New alert message sent from 1, number of alert sent: 55.
+TT_ALERT
+gateway_id: 6
+send_time: 59
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 80
+END
+New alert session created, session timer set.
+New alert message sent from 1, number of alert sent: 56.
+TT_ALERT
+gateway_id: 6
+send_time: 60
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 80
+END
+New alert message sent from 1, number of alert sent: 57.
+TT_ALERT
+gateway_id: 6
+send_time: 61
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 58.
+TT_ALERT
+gateway_id: 6
+send_time: 62
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 59.
+New alert session created, session timer set.
+TT_ALERT
+gateway_id: 6
+send_time: 63
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 60.
+TT_ALERT
+gateway_id: 6
+send_time: 64
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 61.
+TT_ALERT
+gateway_id: 6
+send_time: 65
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 62.
+TT_ALERT
+gateway_id: 6
+send_time: 66
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 63.
+TT_ALERT
+gateway_id: 6
+send_time: 67
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 64.
+TT_ALERT
+gateway_id: 6
+send_time: 68
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 65.
+TT_ALERT
+gateway_id: 6
+send_time: 69
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 66.
+TT_ALERT
+gateway_id: 6
+send_time: 70
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 67.
+TT_ALERT
+gateway_id: 6
+send_time: 71
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 68.
+TT_ALERT
+gateway_id: 6
+send_time: 72
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 69.
+TT_ALERT
+gateway_id: 6
+send_time: 73
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 70.
+TT_ALERT
+gateway_id: 6
+send_time: 74
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 71.
+TT_ALERT
+gateway_id: 6
+send_time: 75
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+New alert message sent from 1, number of alert sent: 72.
+TT_ALERT
+gateway_id: 6
+send_time: 76
+VIN: ZAR94000007043651
+origin_mote_id: 1
+event_clock_time: 3
+origin_clock_time: 42
+hops: 2
+gateway_LAT: 40.356515
+gateway_LONG: 18.168535
+distance: 84
+END
+
