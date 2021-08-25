@@ -26,6 +26,10 @@ OUTPUT=${addprefix $(PROJ_SRC_DIR)/, theft_tracker_mote}
 all:  $(OUTPUT)
 endif
 
+ifeq ($(DEBUG), y)
+CFLAGS+=-DDEBUG
+endif
+
 ifeq ($(TYPE), gtw1)
 CFLAGS+=-DGATEWAY_1
 OUTPUT=${addprefix $(PROJ_SRC_DIR)/, theft_tracker_gateway_1}
