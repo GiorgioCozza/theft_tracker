@@ -27,6 +27,18 @@ At first it is required to go to `contiki_os/apps/theft_tracker/` and build the 
  the application is ready to be simulated in Cooja.
  
  ## How to simulate the application in Cooja?
+ Once the application is built:
  
- All the procedure is explained in the last section of `report/report.pdf`
+1) Open Node-RED and import the flow contained in `./server_nr/tt_server_flow.json` and deploy
+2) Open Cooja and create a new simulation
+3) Set the simulation speed at 100%
+4) Add 4 Sky motes and insert the firmware in `contiki_os/apps/theft_tracker/src/theft_tracker_mote.sky`, place the motes at a proper distance
+5) Add the first gateway with the firmware in `contiki_os/apps/theft_tracker/src/theft_tracker_gateway_1.sky` 
+6) Configure the gateway as TCP Server with port 60005
+7) Add the second gateway with the firmware in `contiki_os/apps/theft_tracker/src/theft_tracker_gateway_2.sky` 
+8) Configure the gateway as TCP Server with port 60006
+9) Move on Node-RED and press `Ctrl+shift+m` to open the world map
+10) Choose the mote that will be the stolen vehicle, press the mote button and move it near the motes/gateways
+11) Observe how the position and distance estimation change in the world map 
+
 
