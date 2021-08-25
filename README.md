@@ -41,3 +41,4 @@ At first it is required to go to `contiki_os/apps/theft_tracker/` and build the 
 10) Choose the mote that will be the stolen vehicle, press the mote button and move it near the motes/gateways
 11) Observe how the position and distance estimation change in the world map 
 
+
